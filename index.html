@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+            :root {
+                --primary:#7a31d3;
+                --secondary: #101010;
+                --welcome-font: 'Satisfy', cursive;
+                --basic-font: 'Lora', serif;
+            }
+
+            body {
+                background-color: var(--secondary);
+                color: var(--primary);
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            /*Navigation Bar*/
+
+            #navbar {
+                background-color: #a4508b;
+                background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+
+                padding: 1em;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-around;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                box-shadow: 5px 5px 3px rgb(11, 9, 14);
+                
+                
+                
+            }
+            .nav-link {
+                
+                text-decoration: none;
+                color:rgb(199, 179, 245);
+                font-family: var(--basic-font);
+                font-size: 1.5em;
+                transition-duration: 500ms;
+            }
+
+            @media screen and (max-width: 799px) {
+                .nav-link{
+                font-size: 1em;
+                padding-right: 0.2em;
+                }
+            }
+
+            .nav-link:hover {
+                font-weight: bolder;
+                text-shadow: 3px 3px var(--secondary);
+                color: rgb(199, 179, 245);
+                background-color: var(--primary);
+                padding: 0.6em;
+                border-radius: 3em; 
+            }
+
+            /*Welcome section*/
+
+            #welcome-section {
+                background-color: var(--secondary);
+                color: var(--primary);
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column;
+                font-family: var(--welcome-font);
+                font-size: 3em;
+            }
+
+            /*Projects section*/
+
+            header {
+                text-align: center;
+                font-size: 3em;
+                font-weight: bold;
+                padding: 1em;
+                font-family: var(--basic-font);
+
+                
+            }
+
+            #projects {
+                padding: 1em;
+                
+                
+                
+            }
+            .project-tile {
+                
+                display: grid;
+                grid-gap: 30px;
+                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                width: 100%;
+                
+                
+            }
+
+            .project-image {
+                width: 100%;
+                border-radius: 8px;
+                transition-duration: 500ms; 
+                border-radius: 3em;
+            }
+            .project-image:hover {
+                border: 5px groove var(--primary);
+            }
+            .project-thumbs {
+                background-color: black;
+                text-align: center;
+                border-radius: 4em;
+                box-shadow: 3px 5px var(--primary);
+                transition-duration: 500ms;
+            }
+            .project-thumbs:hover{
+                background-color: var(--primary);
+                box-shadow: 3px 5px black;
+            }
+            .project-title {
+                text-decoration: none;
+                padding: 1em;
+                color: white;
+                font-family: var(--basic-font);
+                font-size: 1.3em;
+            }
+
+            /*contact section*/
+
+            .contact-container {
+                background-color: var(--secondary);
+                display: flex;
+                padding: 5rem 2rem;
+                
+                flex-flow: column;
+                align-items: center;
+
+            }
+            .contact-header {
+                font-family: var(--welcome-font); 
+                font-size: 3em;
+                padding: 1em;         
+            }
+            #profile-link {
+                text-decoration: none;
+                font-family: var(--basic-font);
+                padding: 1em;
+                font-size: 2em;
+                color: rgb(199, 179, 245);
+                transition-duration: 250ms;
+                margin-bottom: 1em;
+            }
+            #profile-link:hover {
+                text-shadow: 3px 3px var(--secondary);
+                background-color: var(--primary);
+                padding: 0.6em;
+                border-radius: 3em;
+            }
+            i{
+                padding-right: 10px;
+                
+            }
+           
+
+        </style>
+        <body>
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+            
+            <!-- Navigation bar -->
+
+            <nav id="navbar">
+                <a class="nav-link" href="#welcome-section">About me</a>
+                <a class="nav-link" href="#projects">My Projects</a>
+                <a class="nav-link" href="#contact">Contact Me</a>
+            </nav>
+
+            <!-- Welcome Section -->
+
+            <section id="welcome-section">
+                <h1>Hello! I'm Didem.</h1>
+                <h2>This is my Portfolio Page...</h2>
+           </section>
+
+           <!-- Projects Section -->
+
+           <section id="projects">
+               <header>My Projects for now...</header>
+                <div class="project-tile">
+                    <a class= "project-thumbs" href="https://codepen.io/dr27/pen/vYKzPxO">
+                        <img class="project-image" src="https://sourceofmine.weebly.com/uploads/1/1/9/8/119868229/screenshot-15_orig.png" alt="Tribute page thumbnail"> 
+                        <p class="project-title"> The Tribute Page Project</p></a>
+                    <a class= "project-thumbs" href="https://codepen.io/dr27/pen/jOrQyZw">
+                        <img class="project-image" src="https://sourceofmine.weebly.com/uploads/1/1/9/8/119868229/screenshot-12_orig.png" alt="Survey page thumbnail">
+                        <p class="project-title">The Survey Page Project</p></a>
+                    <a class= "project-thumbs" href="https://codepen.io/dr27/pen/eYzbrqa">
+                        <img class="project-image" src="https://sourceofmine.weebly.com/uploads/1/1/9/8/119868229/screenshot-13_orig.png" alt="Survey page version 2 thumbnail">
+                        <p class="project-title">The Survey Page Version 2 Project</p></a>
+                    <a class= "project-thumbs" href="https://codepen.io/dr27/pen/qBNvMNy">
+                        <img class="project-image" src="https://sourceofmine.weebly.com/uploads/1/1/9/8/119868229/screenshot-11_orig.png" alt="Product landing page thumbnail">
+                        <p class="project-title">The Product Landing Page Project</p></a>
+                    <a class= "project-thumbs" href="https://codepen.io/dr27/pen/qBNvMNy">
+                        <img class="project-image" src="https://sourceofmine.weebly.com/uploads/1/1/9/8/119868229/screenshot-14_orig.png" alt="Technical Documentation page thumbnail">
+                        <p class="project-title">The Technical Documentation Page Project</p></a>
+                </div>
+            </section>
+
+            <!-- Contact section-->
+
+            <section id="contact">
+                <div class="contact-container">
+                    <h1 class="contact-header">You can contact me via</h1>
+                <a id="profile-link" target="_blank" href="https://github.com/recepdr"><i class="fab fa-github"></i>Github Profile</a>
+                <a id="profile-link" target="_blank" href="https://dev.to/recepdr"><i class="fab fa-dev"></i>DEV.to Profile</a>
+                
+                </div>
+            </section>
+        </body>
+    </head>
+</html>
